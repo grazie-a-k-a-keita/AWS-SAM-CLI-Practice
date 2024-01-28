@@ -20,7 +20,7 @@ $ sam --version
 SAM CLI, version 1.108.0
 ```
 
-# Init
+## Init
 
 ```shell
 $ sam init
