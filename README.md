@@ -1,4 +1,6 @@
-## AWS CLI Setting
+## AWS SAM CLI Practice
+
+### AWS CLI Setting
 
 ```shell
 $ curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
@@ -11,7 +13,7 @@ $ export AWS_SECRET_ACCESS_KEY="xxx"
 $ export AWS_SESSION_TOKEN="xxx"
 ```
 
-## SAM CLI Setting
+### SAM CLI Setting
 
 ```shell
 $ unzip aws-sam-cli-linux-x86_64.zip -d sam-installation
@@ -20,7 +22,7 @@ $ sam --version
 SAM CLI, version 1.108.0
 ```
 
-## Init
+### Init
 
 ```shell
 $ sam init
@@ -104,7 +106,7 @@ Project name [sam-app]:
 
 Cloning from https://github.com/aws/aws-sam-cli-app-templates (process may take a moment)   
 ```
-## Validate
+### Validate
 
 ```shell
 $ cd sam-app/
@@ -112,7 +114,7 @@ $ sam validate
 /workspaces/AWS-SAM-CLI-Practice/sam-app/template.yaml is a valid SAM Template
 ```
 
-## Build
+### Build
 
 ```shell
 $ sam build
@@ -121,7 +123,7 @@ Built Artifacts  : .aws-sam/build
 Built Template   : .aws-sam/build/template.yaml
 ```
 
-## Deploy
+### Deploy
 
 ```shell
 $ sam deploy --guided
@@ -141,7 +143,7 @@ SAM configuration environment [default]:
 Deploy this changeset? [y/N]: y
 ```
 
-## Operation Confirmation
+### Operation Confirmation
 
 ```shell
 $ curl "https://xxx.execute-api.ap-northeast-1.amazonaws.com/Prod/hello"
@@ -149,7 +151,7 @@ $ curl "https://xxx.execute-api.ap-northeast-1.amazonaws.com/Prod/hello"
 {"message":"hello world"}
 ```
 
-## Delete
+### Delete
 ```shell
 $ sam delete
 ```
